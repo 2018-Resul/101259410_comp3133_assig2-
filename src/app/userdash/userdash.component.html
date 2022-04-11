@@ -1,0 +1,26 @@
+
+<h1>My Booking</h1>
+
+<div >
+  <table class="table" >
+    <th scope="col">Listing Id</th>
+    <th scope="col">Booking id</th>
+    <th scope="col">Booking Date</th>
+    <th scope="col">Booking Start</th>
+    <th scope="col">Booking End</th>
+    <th scope="col">username</th>
+
+
+    <tbody>
+  <tr *ngFor="let bookiing of myBooking">
+    <td class="">{{bookiing.listing_id}}</td>
+    <td class="">{{bookiing.booking_id}}</td>
+    <td class="">{{bookiing.booking_date|date}}</td>
+    <td class="">{{bookiing.booking_start|date}}</td>
+    <td class="">{{bookiing.booking_end|date}}</td>
+    <td class="">{{bookiing.username}}</td>
+  </tr>
+
+</tbody>
+</table>
+</div>

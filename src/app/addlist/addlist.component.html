@@ -1,0 +1,105 @@
+
+<section class="vh-100" style="background-color: #eee;">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card text-black" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Add new list</p>
+
+                <form class="mx-1 mx-md-4" #registerForm="ngForm" (ngSubmit)="addNewListing(registerForm)">
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" #listing_id="ngModel" [(ngModel)]="model.listing_id" name="listing_id"
+                      id="listing_id" class="form-control" />
+                      <label class="form-label" for="listing_id">Listing Id</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" #listing_title="ngModel" [(ngModel)]="model.listing_title" name="listing_title"
+                      id="listing_title" class="form-control" />
+                      <label class="form-label" for="listing_title">Listing Title</label>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" #description="ngModel" [(ngModel)]="model.description" name="description"
+                      id="description" class="form-control" />
+                      <label class="form-label" for="description">Description</label>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" #street="ngModel" [(ngModel)]="model.street" name="street"
+                      id="street" class="form-control" />
+                      <label class="form-label" for="street">Street</label>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" #city="ngModel" [(ngModel)]="model.city" name="city"
+                      id="city" class="form-control" />
+                      <label class="form-label" for="city">City</label>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" #postal_code="ngModel" [(ngModel)]="model.postal_code" name="postal_code"
+                      id="postal_code" class="form-control" />
+                      <label class="form-label" for="postal_code">Postal Code</label>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" #price="ngModel" [(ngModel)]="model.price" name="price"
+                      id="price" class="form-control" />
+                      <label class="form-label" for="price">Price</label>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" #email="ngModel" [(ngModel)]="model.email" name="email"
+                      id="email" class="form-control" />
+                      <label class="form-label" for="email">Email</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <button type="submit" class="btn btn-primary btn-lg">Add</button>
+
+                  </div>
+
+                  <input type="text" #username="ngModel" [(ngModel)]="model.username" name="username"
+                      id="username" hidden />
+
+                      <input type="text" #type="ngModel" [(ngModel)]="model.type" name="type"
+                      id="type" hidden />
+
+                </form>
+
+              </div>
+              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <br><br><br>
+</section>

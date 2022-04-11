@@ -1,0 +1,31 @@
+
+
+<h1>All Listing</h1>
+<div >
+  <table class="table" >
+    <th scope="col">Listing Id</th>
+    <th scope="col">Listing Title</th>
+    <th scope="col">Description</th>
+    <th scope="col">Street</th>
+    <th scope="col">City</th>
+    <th scope="col">Postal Code</th>
+    <th scope="col">Email</th>
+
+    <tbody>
+  <tr *ngFor="let listing of allListing">
+    <td class="">{{listing.listing_id}}</td>
+    <td class="">{{listing.listing_title}}</td>
+    <td class="">{{listing.description}}</td>
+    <td class="">{{listing.street}}</td>
+    <td class="">{{listing.city}}</td>
+    <td class="">{{listing.postal_code}}</td>
+    <td class="">{{listing.email}}</td>
+    <td class=""><button type="submit" class="btn btn-success" (click)="book(listing)" >Book</button></td>
+
+
+
+  </tr>
+
+</tbody>
+</table>
+</div>
